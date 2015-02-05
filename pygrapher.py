@@ -1,8 +1,6 @@
 ##Created by Keith Poore
 ##Start Date: April 24, 2008
-##Purpose: To use Pygame to make a grapgh using user input data of a function. Classes created include:
-#   finding a derviative and double derivative (Maximum, minimum, concavity),
-#   finding equations of a line (intercepts, slope),  Find Asympotes.
+##Purpose: To use Pygame to make a grapgh using user input data of a function.
 ##Functions accepted are: Absolute Value, Polynomial, Polynomial Rational,  Trigonometry
 
 #open pygame and string class
@@ -29,9 +27,18 @@ size = width, height = 500, 500
 screen = display.set_mode(size)
 ## make a count of how many x values there are
 xNum = 0
-for i in range (len(func)):
+for i in range (len(sfunc)):
         if func [i] == 'x':
             xNum += 1
+
+##def multivariable (func, xNum):
+##	if xNum > 0:
+##		for i in range(len(func)):
+##			if func[i] == 'x':
+##        			##split at x
+##			        split1 = split1 + func.split('x')
+##	if xNum == 0:
+##		return(multivaribale (func, xNum-1))
 
 def pointsOnGraph (func, xNum):##a function to figure out the points of the function
     p = []
