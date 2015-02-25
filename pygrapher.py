@@ -32,11 +32,20 @@ for i in range (len(sfunc)):
             xNum += 1
 
 ##def multivariable (func, xNum):
+	split1=[]
+	split2=[]
 ##	if xNum > 0:
 ##		for i in range(len(func)):
 ##			if func[i] == 'x':
 ##        			##split at x
 ##			        split1 = split1 + func.split('x')
+##			if i = 0 and split1[0] == 'x':
+##				split2[0] = 1
+##				split2.append(split1)
+##			if i >= 0 and split1[i] = 'x' and split1[i-1] != isOperator:
+##				split2[i] = 1
+##				split2[i].append(split1)
+##		
 ##	if xNum == 0:
 ##		return(multivaribale (func, xNum-1))
 
